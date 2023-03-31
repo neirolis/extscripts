@@ -1,0 +1,9 @@
+{
+	"name": "Dummy Socket",
+	"desc": "Dummy unix-socket block",
+	"icon": "transfer.png",
+	"exec": "./main.py",
+	
+	"transport": "unixsocket",
+	"serialize": "msgpack"
+}

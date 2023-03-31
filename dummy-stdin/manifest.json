@@ -1,0 +1,9 @@
+{
+	"name": "Dummy stdin",
+	"desc": "Dymmy stdin/stdout block",
+	"icon": "block.png",
+	"exec": "./main.py",
+
+	"transport": "stdin",
+	"serialize": "json"
+}
