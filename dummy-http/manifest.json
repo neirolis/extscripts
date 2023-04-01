@@ -1,0 +1,10 @@
+{
+  "name": "Dummy http",
+  "desc": "Dymmy http block",
+  "icon": "http.png",
+
+  "transport": "http",
+  "serialize": "json",
+
+  "variables": [{ "name": "addr", "value": "127.0.0.1:8090", "readonly": true }]
+}
