@@ -1,0 +1,9 @@
+{
+	"name": "WithAPI",
+	"desc": "Block with api requests",
+	"icon": "api.png",
+	"exec": "./main.py",
+
+	"transport": "stdin",
+	"serialize": "json"
+}

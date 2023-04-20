@@ -1,0 +1,2 @@
+requests == v2.28.2
+Pillow == v9.5.0
