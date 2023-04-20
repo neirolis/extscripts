@@ -1,18 +1,16 @@
 #!/usr/bin/env python3
 
-
 import sys
 import json
 import traceback
 import io
 from PIL import Image
 
-
 import rtmipapi
+
 
 api = rtmipapi.Client("http://admin:admin@127.0.0.1:8888")
 log = open("errors.log", "a")
-
 
 while True:
     try:
@@ -30,7 +28,7 @@ while True:
         events = api.events(frame["camera"]["id"], frame["time"]-1800)
         for e in events:
             # get an image of each event
-            imgdata = api.event_image(e.frame)
+            imgdata = api.event_image(e["frame"])
             img = Image.open(io.BytesIO(imgdata))
             # do something with img
 
@@ -45,3 +43,4 @@ while True:
     except Exception as e:
         log.write(str(e))
         log.write(traceback.format_exc())
+        log.flush()
